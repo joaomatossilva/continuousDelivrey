@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoobarApplication", "FoobarApplication\FoobarApplication.csproj", "{CD298E08-85EB-4DF6-B981-96DF0F7FE91F}"
-EndProject
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5395226B-74A8-413B-9B4E-A126B78F24E6}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -10,16 +10,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{539522
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{85D48108-DFFB-4067-BE23-DEC675863EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoobarConsole", "FoobarConsole\FoobarConsole.csproj", "{F0D4C9A8-EB15-4D9E-893A-EA4A42D7621E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoobarNoReferencedLibrary", "FoobarNoReferencedLibrary\FoobarNoReferencedLibrary.csproj", "{86E6E7CA-7FEF-4D4C-8AD0-2A946382E13E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoobarLibrary", "FoobarLibrary\FoobarLibrary.csproj", "{5013D4EB-6173-4E3A-B617-3C9ACE98752B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoobarApplication", "FoobarApplication\FoobarApplication.csproj", "{83547F21-D0FB-4E7D-A74F-4FB43BAA58FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CD298E08-85EB-4DF6-B981-96DF0F7FE91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD298E08-85EB-4DF6-B981-96DF0F7FE91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD298E08-85EB-4DF6-B981-96DF0F7FE91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD298E08-85EB-4DF6-B981-96DF0F7FE91F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D4C9A8-EB15-4D9E-893A-EA4A42D7621E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D4C9A8-EB15-4D9E-893A-EA4A42D7621E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D4C9A8-EB15-4D9E-893A-EA4A42D7621E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D4C9A8-EB15-4D9E-893A-EA4A42D7621E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E6E7CA-7FEF-4D4C-8AD0-2A946382E13E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E6E7CA-7FEF-4D4C-8AD0-2A946382E13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E6E7CA-7FEF-4D4C-8AD0-2A946382E13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E6E7CA-7FEF-4D4C-8AD0-2A946382E13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5013D4EB-6173-4E3A-B617-3C9ACE98752B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5013D4EB-6173-4E3A-B617-3C9ACE98752B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5013D4EB-6173-4E3A-B617-3C9ACE98752B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5013D4EB-6173-4E3A-B617-3C9ACE98752B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83547F21-D0FB-4E7D-A74F-4FB43BAA58FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83547F21-D0FB-4E7D-A74F-4FB43BAA58FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83547F21-D0FB-4E7D-A74F-4FB43BAA58FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83547F21-D0FB-4E7D-A74F-4FB43BAA58FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
