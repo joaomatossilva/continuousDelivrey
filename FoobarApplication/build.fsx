@@ -3,6 +3,7 @@
 
 open Fake
 open Fake.AssemblyInfoFile
+open System.IO
 
 RestorePackages()
 
@@ -10,6 +11,7 @@ RestorePackages()
 let buildDir  = @".\.build\"
 let testDir   = @".\.test\"
 let deployDir = @".\.deploy\"
+let abosluteDeployDir = Path.GetFullPath(deployDir)
 
 // tools
 //let nunitVersion = GetPackageVersion packagesDir "NUnit.Runners"
@@ -39,6 +41,7 @@ Target "WriteAssemblyInfo" (fun _ ->
 
 Target "CompileApp" (fun _ ->    
     !! @"**\*.csproj" 
+//      |> MSBuildReleaseExt null [ ("RunOctoPack", "true"); ("OctoPackEnforceAddingFiles","true"); ("OctoPackPackageVersion", version); ("OctoPackPublishPackageToFileShare", abosluteDeployDir) ] "Build" 
       |> MSBuildReleaseExt null [ ("RunOctoPack", "true"); ("OctoPackEnforceAddingFiles","true"); ("OctoPackPackageVersion", version) ] "Build" 
       |> Log "AppBuild-Output: "
 )
