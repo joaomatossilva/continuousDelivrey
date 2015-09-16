@@ -2,6 +2,13 @@
 [Bb]in/
 [Oo]bj/
 
+.build/
+.deploy/
+.fake/
+.test/
+.vs/
+.tools/
+
 # mstest test results
 TestResults
 

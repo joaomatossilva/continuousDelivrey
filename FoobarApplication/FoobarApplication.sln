@@ -10,7 +10,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{539522
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{85D48108-DFFB-4067-BE23-DEC675863EB4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".scripts", ".scripts", "{85D48108-DFFB-4067-BE23-DEC675863EB4}"
+	ProjectSection(SolutionItems) = preProject
+		AssemblyInfo_Shared.cs = AssemblyInfo_Shared.cs
+		build.cmd = build.cmd
+		build.fsx = build.fsx
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoobarConsole", "FoobarConsole\FoobarConsole.csproj", "{F0D4C9A8-EB15-4D9E-893A-EA4A42D7621E}"
 EndProject
